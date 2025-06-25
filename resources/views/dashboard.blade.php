@@ -13,5 +13,13 @@
                 </div>
             </div>
         </div>
+	<div class="mt-6 border-t pt-4">
+	    @hasrole('Admin')
+	        <p class="font-semibold">Panel de Administrador:</p>
+	        <a href="{{ route('admin.test') }}" class="text-indigo-600 hover:text-indigo-900">
+	            &rarr; Ir a la página de prueba de Admin
+        	</a>
+	    @endhasrole
+	</div>
     </div>
 </x-app-layout>
